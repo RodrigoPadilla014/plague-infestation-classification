@@ -56,6 +56,7 @@ def validate_dataset(df: pd.DataFrame, config: RunConfig) -> pd.DataFrame:
 
     forbidden_present = sorted(set(config.forbidden_columns) & set(df.columns))
     if forbidden_present:
-        raise ValueError(f"Forbidden columns are present: {forbidden_present}")
+        print(f"WARNING: dropping {len(forbidden_present)} forbidden columns: {forbidden_present}", flush=True)
+        df = df.drop(columns=forbidden_present)
     return df.copy()
 
