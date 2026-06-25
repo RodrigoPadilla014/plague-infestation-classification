@@ -1,0 +1,16 @@
+.git
+.gitignore
+.claude
+credentials
+data
+experiments
+tmp
+template_pipeline
+ec2
+queries
+__pycache__
+*.py[cod]
+.pytest_cache
+.venv
+
+feature_engineering

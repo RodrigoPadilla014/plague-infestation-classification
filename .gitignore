@@ -1,0 +1,29 @@
+# Credentials and secrets — NEVER commit
+credentials/
+.env
+*.pem
+*.ppk
+
+# Datasets — large files, not tracked in git
+data/
+
+# Terraform state and providers — contain sensitive resource state
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/.terraform/
+
+# Temporary work, diagnostics, scratch
+tmp/
+experiments/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+catboost_info/
+mlruns/
+
+# Claude Code local settings
+.claude/

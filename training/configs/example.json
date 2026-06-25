@@ -1,0 +1,22 @@
+{
+  "target_column": "target",
+  "period_column": "zafra",
+  "date_column": "prediction_date",
+  "row_id_column": "record_id",
+  "train_periods": "2019,2020,2021,2022,2023",
+  "evaluation_periods": "2024,2025",
+  "categorical_columns": "ingenio,variedad,grupo_de_suelo",
+  "metadata_columns": "lote",
+  "forbidden_columns": "",
+  "exclude_features": "",
+  "min_train_periods": 1,
+  "imbalance": "balanced",
+  "objective_metric": "average_precision",
+  "threshold_strategy": "fixed",
+  "fixed_threshold": 0.5,
+  "calibration": "none",
+  "optuna_trials": 20,
+  "early_stopping_rounds": 50,
+  "shap": true,
+  "random_seed": 42
+}
